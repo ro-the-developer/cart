@@ -9,4 +9,4 @@ $cart->items[] = new Product(200);
 
 echo "НДС: ", $cart->calcVat(), "\n";
 $cart->makeOrder(0.5);
-echo "Цена:", $cart->order->getPrice();
+echo "Сумма: ", $cart->order->getPrice();
