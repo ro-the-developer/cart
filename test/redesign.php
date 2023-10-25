@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
+use Common\Config;
+use Common\Product;
+use Common\SimpleMailer;
 use Redesign\Cart;
-use Redesign\Config;
-use Redesign\Product;
 use Redesign\Client;
-use Redesign\SimpleMailer;
 
 require __DIR__.'/src/autoload.php';
 

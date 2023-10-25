@@ -1,13 +1,15 @@
 <?php
 declare(strict_types=1);
 namespace Refactoring;
+use Common\Config;
+use Common\SimpleMailer;
 
 class Cart implements iCart
 {
     public array $items = [];
     public Order $order;
 
-    public function calcVat()
+    public function calcVat(): float
     {
         $vat = 0;
         foreach ($this->items as $item) {
@@ -31,7 +33,7 @@ class Cart implements iCart
         $mailer->sendToManagers($text);
     }
 
-    protected function calcPrice($discount = 1) {
+    protected function calcPrice($discount = 1): float {
         $price = 0;
         foreach ($this->items as $item) {
             $price += $item->getPrice() * (1 + Config::VAT) * $discount;

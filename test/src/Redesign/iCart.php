@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace Redesign;
 
+use Common\Product;
 interface iCart
 {
     public function calcVat();

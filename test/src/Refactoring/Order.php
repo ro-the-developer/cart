@@ -9,10 +9,10 @@ class Order {
         $this->price = $price;
         $this->id = 1;
     }
-    public function getId() {
+    public function getId(): int {
         return $this->id;
     }
-    public function getPrice() {
+    public function getPrice(): float {
         return $this->price;
     }
 }

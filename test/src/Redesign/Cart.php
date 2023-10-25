@@ -3,6 +3,9 @@ declare(strict_types=1);
 
 namespace Redesign;
 
+use Common\Product;
+use Common\SimpleMailer;
+
 class Cart implements iCart
 {
     protected array $items;

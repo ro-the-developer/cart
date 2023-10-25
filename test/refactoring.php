@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 use Refactoring\Cart;
-use Refactoring\Product;
+use Common\Product;
 
 require __DIR__.'/src/autoload.php';
 

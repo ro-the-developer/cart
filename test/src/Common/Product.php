@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
-namespace Refactoring;
 
+namespace Common;
 class Product {
-    protected $price;
-    public function __construct($price) {
+    protected float $price;
+    public function __construct(float $price) {
         $this->price = $price;
     }
     public function getPrice() {
