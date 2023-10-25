@@ -1,7 +1,10 @@
 <?php
-require __DIR__.'/src/autoload.php';
+declare(strict_types=1);
+
 use Refactoring\Cart;
 use Refactoring\Product;
+
+require __DIR__.'/src/autoload.php';
 
 $cart = new Cart();
 $cart->items[] = new Product(100);
