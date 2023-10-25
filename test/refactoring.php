@@ -11,5 +11,6 @@ $cart->items[] = new Product(100);
 $cart->items[] = new Product(200);
 
 echo "НДС: ", $cart->calcVat(), "\n";
+echo "Cart::makeOrder(): ";
 $cart->makeOrder(0.5);
 echo "Сумма: ", $cart->order->getPrice();
